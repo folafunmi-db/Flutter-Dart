@@ -14,6 +14,4 @@ main() {
   //int -> String
   String piAsString = 3.14569.toStringAsFixed(2);
   assert(piAsString == "3.14");
-
-
 }
