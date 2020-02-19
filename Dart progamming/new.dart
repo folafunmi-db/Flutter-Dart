@@ -1,3 +1,5 @@
 main() {
-  print("Hello world");
+  var firstName = "Folafunmi";
+  String lastName = "Mustapha";
+  print(firstName +' '+ lastName);
 }
