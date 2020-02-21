@@ -23,5 +23,10 @@ void main() {
     print(thing);
     thing-=1;
   }
-}
 
+  //or
+  do {
+    print(thing);
+    thing -=1;
+  }while (thing > 0);
+}
