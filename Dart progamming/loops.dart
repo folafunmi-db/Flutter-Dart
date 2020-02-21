@@ -17,6 +17,11 @@ void main() {
     print(n)
   });
 
-  
+  //while loop
+  var thing = 5;
+  while (thing > 0) {
+    print(thing);
+    thing-=1;
+  }
 }
 
