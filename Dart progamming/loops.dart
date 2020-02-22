@@ -18,15 +18,27 @@ void main() {
   });
 
   //while loop
-  var thing = 5;
-  while (thing > 0) {
-    print(thing);
-    thing-=1;
+  // var thing = 5;
+  // while (thing > 0) {
+  //   print(thing);
+  //   thing-=1;
+  // }
+
+  // //or
+  // do {
+  //   print(thing);
+  //   thing -=1;
+  // }while (thing > 0);
+
+  //break and continue
+  for (var i = 5; i < 10; i++) {
+    if (i > 8) break;
+    print(i);
   }
 
-  //or
-  do {
-    print(thing);
-    thing -=1;
-  }while (thing > 0);
+  for (var i = 0; i < 10; i++) {
+    if ( i % 2 == 0) continue;
+    print("Odd: $i");
+  }
+  print("\n");
 }
