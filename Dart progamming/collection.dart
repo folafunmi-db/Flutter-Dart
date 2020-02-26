@@ -46,4 +46,33 @@ void main() {
   //another method of creating maps
   var family2 = Map();
   family2['one2'] = 'dad2';
+
+  showOutput(square(3));
+  showOutput(sqir(3, 8));
+  showOutput(sqir2(2, numt3: 7));
+  showOutput(sqir2(9));
+  showOutput(sqir3(6));
+
+  //Anonymous function
+  var sist = ['apple', 'ball', 'candy'];
+  sist.forEach((sist) {
+    print(sist);
+  });
+}
+
+//Function
+//using arrow functions
+dynamic square(var numt) => numt * numt;
+
+//Positional arguements
+dynamic sqir(var numt2, var numt3) => numt2 * numt3;
+
+//Keyword arguements, compulsory
+dynamic sqir2(var numt2, {var numt3}) => numt2 + (numt3 ?? 4);
+
+//Keyword arguements, optional
+dynamic sqir3(var numt2, [var numt3]) => numt2 + (numt3 ?? 4);
+
+void showOutput (var msg) {
+  print(msg);
 }
