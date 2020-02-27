@@ -63,6 +63,47 @@ class Car extends Vehicle {
   }
 }
 
+class X2 {
+  String name;
+
+  X2(this.name);
+
+  void showOutput() {
+    print(this.name);
+  }
+
+  dynamic square(dynamic val) {
+    return val * val;
+  }
+}
+
+class Y2 extends X2 {
+  Y2(String name) : super(name);
+
+//similar methos in another class and you want the methos to be redefined
+  @override //to show that this method is overriding
+  void showOutput() {
+    print(this.name);
+    print("Hello...");
+  }
+
+}
+
+class Rectangle {
+  num left, width, top, height;
+
+  Rectangle(this.left, this.top, this.width, this.height);
+
+  //get and set functions are methods that provide read and write access to an
+  //objects propertiees
+
+  //define two calculatetd properties: right and bottom
+  num get right => left + width;
+  set right(num value) => left = value - width;
+  num get bottom => top + height;
+  set bottom(num value) =>top = value - height;
+}
+
 main() {
   Person person1 = Person("Folafunmi");
   person1.showOutput();
@@ -82,4 +123,9 @@ main() {
 
   var car1 = Car('Fols cars', 1998, 3000);
   car1.showOutput();
+
+  var rect = Rectangle(3, 4, 5, 6);
+  print(rect.left);
+  rect.right = 12;
+  print(rect.left);
 }
